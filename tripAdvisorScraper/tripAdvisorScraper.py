@@ -33,7 +33,7 @@ def print_reviews(url, n_reviews, filter_tuple):
         pass
     url_head, url_trail = get_head_and_trail(url)
 
-    # The filename of the output txt file
+    # The filename of the output txt file (removing '.html')
     txt_file_name = url_trail[:-5] + '.txt'
 
     with open(OUT_FOLDER + txt_file_name, 'a') as f:
@@ -68,15 +68,15 @@ def print_reviews(url, n_reviews, filter_tuple):
 filter_text = ("darkness", "dark", "shadow", "space", "experience", "light")
 
 
-# print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g319796-d5988326-Reviews-Museo_de_Altamira-Santillana_del_Mar_Cantabria.html',
-#               n_reviews=320,
-#               filter_tuple=filter_text)
-# print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g2044790-d246632-Reviews-Lascaux_II-Montignac_Dordogne_Nouvelle_Aquitaine.html',
-#               n_reviews=520,
-#               filter_tuple=filter_text)
-# print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g2044790-d11907064-Reviews-Lascaux_IV-Montignac_Dordogne_Nouvelle_Aquitaine.html',
-#               n_reviews=340,
-#               filter_tuple=filter_text)
+print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g319796-d5988326-Reviews-Museo_de_Altamira-Santillana_del_Mar_Cantabria.html',
+              n_reviews=320,
+              filter_tuple=filter_text)
+print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g2044790-d246632-Reviews-Lascaux_II-Montignac_Dordogne_Nouvelle_Aquitaine.html',
+              n_reviews=520,
+              filter_tuple=filter_text)
+print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g2044790-d11907064-Reviews-Lascaux_IV-Montignac_Dordogne_Nouvelle_Aquitaine.html',
+              n_reviews=340,
+              filter_tuple=filter_text)
 print_reviews(url='https://www.tripadvisor.com/Attraction_Review-g1379167-d283739-Reviews-Museu_da_Fundacao_do_Coa-Vila_Nova_de_Foz_Coa_Guarda_District_Central_Portug.html',
               n_reviews=90,
               filter_tuple=filter_text)
