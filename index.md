@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Roberto's Tech Tutor GitHub page
+
+This is a test page, it will be soon edited.
 
 You can use the [editor on GitHub](https://github.com/rpizziol/tech-tutor/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
